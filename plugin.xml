@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin version="php">
+<id>CodeCompress</id>
+<name>代码压缩</name>
+<url>http://shuoit.net</url>
+<note>网页代码压缩，清除空格、换行、制表符、注释等多余元素，减小网页体积。加速网站访问。</note>
+<description>功能：一款zblogphp博客的插件，安装后就能用，无需繁琐的配置，仅适用于php版本，内含php网页源码压缩内库。
+
+原理：在首页加载时，开启缓冲，并在首页结束时获取缓冲区内容并压缩后输出。使用：Filter_Plugin_Index_Begin和Filter_Plugin_Index_End挂接函数。
+
+初衷：在本插件发布之前由于没有网页压缩插件，而网页压缩这一功能确实实用，所以本人就尝试做了一款，算是第一款免费网页压缩插件。特别感谢鸟儿博客站长无偿与无私的帮助。本着分享与学习的态度，鄙人已将本插件已开源至Github：https://github.com/tangkunyin/codecompressforzblog。希望能帮到初学者！
+
+作者：唐坤银，JavaEE工程师。网站：http://shuoit.net</description>
+<path></path>
+<include>include.php</include>
+<level>1</level>
+<author>
+  <name>唐坤银</name>
+  <email>tangkunyin@shuoit.net</email>
+  <url>http://shuoit.net</url>
+</author>
+<source>
+  <name></name>
+  <email></email>
+  <url></url>
+</source>
+<adapted>140614</adapted>
+<version>1.0</version>
+<pubdate>2014-11-24</pubdate>
+<modified>2014-11-24</modified>
+<price>0</price>
+<advanced>
+  <dependency></dependency>
+  <rewritefunctions></rewritefunctions>
+  <conflict></conflict>
+</advanced>
+<sidebars>
+  <sidebar1></sidebar1>
+  <sidebar2></sidebar2>
+  <sidebar3></sidebar3>
+  <sidebar4></sidebar4>
+  <sidebar5></sidebar5>
+</sidebars>
+</plugin>
