@@ -1,6 +1,6 @@
 <?php
 //导入第三方内库
-require_once dirname(__FILE__).DIRECTORY_SEPARATOR.'HtmlMinify'.DIRECTORY_SEPARATOR.'html-minify.php';
+require_once dirname(__FILE__).DIRECTORY_SEPARATOR.'CodeCompress-Lib-HtmlMinify'.DIRECTORY_SEPARATOR.'html-minify.php';
 
 #注册插件
 RegisterPlugin("CodeCompress","ActivePlugin_CodeCompress");
@@ -25,10 +25,14 @@ function CodeCompress_end(){
 	$html=ob_get_contents();
 	ob_get_clean();
 	if(!function_exists('absolute_to_relative_url')){
-		require_once dirname(__FILE__).DIRECTORY_SEPARATOR.'HtmlMinify'.DIRECTORY_SEPARATOR.'absolute-to-relative-urls.php';
+		require_once dirname(__FILE__).DIRECTORY_SEPARATOR.'CodeCompress-Lib-HtmlMinify'.DIRECTORY_SEPARATOR.'absolute-to-relative-urls.php';
 	}
-	//默认压缩所有的文件
-	echo new HTML_Minify($html,true,true,true,true,true);
+	$currentpage = $_SERVER['PHP_SELF'];
+	if(strpos($currentpage,"zb_system/") || strpos($currentpage,"zb_users/")){
+		echo $html;
+	}else{
+		echo new CodeCompress_HTML_Minify($html);
+	}
 }
 
 function InstallPlugin_CodeCompress() {
