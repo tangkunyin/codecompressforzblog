@@ -9,4 +9,4 @@
 	2、新增插件压缩包（下载后可直接使用，当然也可以从ZPH应用中心免费下载）
 	3、修正已知BUG
 
-作者：唐坤银，网站：[http://shuoit.net](http://shuoit.net "说IT")
+商店地址：https://app.zblogcn.com/?id=594
