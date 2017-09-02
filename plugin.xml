@@ -10,12 +10,12 @@
 
 初衷：在本插件发布之前由于没有网页压缩插件，而网页压缩这一功能确实实用，所以本人就尝试做了一款，算是第一款免费网页压缩插件。特别感谢鸟儿博客站长无偿与无私的帮助。本着分享与学习的态度，鄙人已将本插件已开源至Github：https://github.com/tangkunyin/codecompressforzblog。希望能帮到初学者！
 
-作者：唐坤银，JavaEE工程师。网站：http://shuoit.net</description>
+作者：唐先森。网站：http://shuoit.net</description>
 <path></path>
 <include>include.php</include>
 <level>1</level>
 <author>
-  <name>唐坤银</name>
+  <name>唐先森</name>
   <email>tangkunyin@shuoit.net</email>
   <url>http://shuoit.net</url>
 </author>
